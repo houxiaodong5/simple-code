@@ -1,0 +1,19 @@
+eureka:
+  client:
+    register-with-eureka: true #fault:自身仅作为服务器，不作为客户端
+    fetch-registry: true #是否去注册中心获取其他服务的地址
+    service-url:
+      defaultZone: http://localhost:9000/eureka/ #应用的URL
+  instance:
+    hostname: localhost
+spring:
+  application:
+    name: gateway-service
+zuul:
+  routes:
+    id:
+      path: /id-service/**   # 要拦截请求的路径
+      serviceId: id-service  # 要拦截请求的路径所要映射的服务  即将/id下所有的请求转发到id-factory-service服务去
+    user:
+      path: /user-service/**
+      serviceId: user-service

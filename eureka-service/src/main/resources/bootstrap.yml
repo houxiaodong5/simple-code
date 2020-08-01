@@ -1,0 +1,11 @@
+eureka:
+  client:
+    register-with-eureka: false #fault:自身仅作为服务器，不作为客户端
+    fetch-registry: false #是否去注册中心获取其他服务的地址
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ #应用的URL
+  instance:
+    hostname: localhost
+spring:
+  application:
+    name:

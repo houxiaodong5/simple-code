@@ -1,0 +1,7 @@
+server:
+  port: 9000
+
+spring:
+  resources:
+    static-locations: classpath:/static/
+
