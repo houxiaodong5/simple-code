@@ -1,0 +1,11 @@
+eureka:
+  client:
+    register-with-eureka: true #fault:自身仅作为服务器，不作为客户端
+    fetch-registry: true #是否去注册中心获取其他服务的地址
+    service-url:
+      defaultZone: http://localhost:9000/eureka/ #应用的URL
+  instance:
+    hostname: localhost
+spring:
+  application:
+    name: crawler-service
