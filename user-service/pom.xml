@@ -2,15 +2,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>id-factory-service</artifactId>
-        <groupId>com.hxd</groupId>
-        <version>1.0-SNAPSHOT</version>
-        <relativePath>../id-factory-service/pom.xml</relativePath>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.hxd</groupId>
+        <artifactId>service-base-dependency</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
 
+    <groupId>com.hxd</groupId>
     <artifactId>user-service</artifactId>
-
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
 
 </project>
